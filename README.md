@@ -39,3 +39,7 @@ python3 scripts/check-site.py
 ```
 
 No requiere instalación ni build. Las carpetas `tmp/`, `output/` y `.codex-review/` contienen archivos temporales o generados y quedan fuera de Git.
+
+## Vercel
+
+`vercel.json` publica `prototype/` como raíz de la web estática, sin build. En Vercel, el directorio raíz del proyecto debe ser la raíz del repositorio (`.`). La home se sirve en `/` y las páginas en `/plantas.html`, `/proyectos.html`, etc. Solo se publica el contenido de `prototype/`.
