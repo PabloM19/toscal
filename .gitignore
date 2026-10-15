@@ -1,0 +1,14 @@
+# Local files and generated previews
+.DS_Store
+**/.DS_Store
+/tmp/
+/output/
+/.codex-review/
+
+# Dependencies, caches and local configuration
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
