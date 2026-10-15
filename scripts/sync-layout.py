@@ -15,7 +15,7 @@ for path in sorted(ROOT.glob('*.html')):
     footer_start = page.index('    <footer class="home-footer">')
     footer_end = page.index('</footer>', footer_start) + len('</footer>')
     tail = page[footer_end:].lstrip('\n')
-    current = header.replace('href="#el-garden"', 'href="index.html#el-garden"')
+    current = header
     current = current.replace(f'href="{path.name}"', f'href="{path.name}" aria-current="page"')
     path.write_text(page[:start] + current + page[main:footer_start] + footer + tail)
     print(f'Layout común: {path.name}')
