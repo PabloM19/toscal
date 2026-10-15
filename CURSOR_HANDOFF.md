@@ -2,13 +2,17 @@
 
 Este directorio contiene un prototipo comercial estático en `prototype/`. No es todavía el desarrollo productivo. La prioridad es que la experiencia se sienta como un garden mediterráneo experto, amplio y cercano; nunca como un catálogo genérico.
 
-## Qué ya está planteado
+## Estado actual del diseño
 
-- Home en `prototype/index.html` con cabecera contextual, menú desplegable con seis familias, hero, tres rutas de necesidad, prueba de autoridad, categorías, proyecto, mapa y pie.
-- Rutas desarrolladas como muestra: `plantas.html`, `productos.html`, `floristeria.html`, `proyectos.html` y `visitanos.html`.
-- Sistema visual en `prototype/styles.css`: verde profundo `#173b30`, crema `#f9f6ef`, arena, terracota y tipografías Fraunces + DM Sans.
-- Interacciones pequeñas de menú e idioma en `prototype/app.js`. El selector de idioma cambia el estado visual; las traducciones completas deben ser revisadas por hablantes nativos antes de publicar.
-- Fotografías reales del garden se toman de `fotos_toscal/`; no sustituirlas por stock mientras se mantenga esta propuesta.
+- La rama definitiva es `main`. La variante elegida por el usuario es «Donde empieza tu lado verde», con hero a todo el ancho, misma altura y sin la etiqueta superior derecha. Se mantiene la etiqueta izquierda con su punto.
+- El usuario ha aprobado trasladar este estilo a todas las páginas. Las seis rutas públicas están unificadas: inicio, plantas, productos, floristería, proyectos y visita.
+- Cabecera y pie comunes; menú con hovers rectangulares (radio de 2 px), a petición expresa del usuario. Mantener esta forma también en nuevos componentes.
+- Mapa navegable y guía de componentes en `prototype/guia-diseno.html`, de uso interno y con `noindex`. Inventario y criterios en `MAPA_WEB.md` y `docs/GUIA_DISENO.md`.
+- `prototype/site.css` y `site.js` comparten el lenguaje y la navegación accesible de la home. `hero.css` conserva su hero aprobado y `pages.css` contiene los componentes interiores. `styles.css` es la base heredada.
+- `scripts/sync-layout.py` replica cabecera y pie desde la home. `scripts/check-site.py` valida rutas, anclas, imágenes y estructura básica.
+- El formulario de proyectos conserva cuatro pasos, validación, navegación atrás y respuestas seleccionadas. `proyectos.js` prepara un correo; el visitante debe enviarlo desde su aplicación de correo.
+- Las fotografías son propias, optimizadas en WebP con variantes responsive. No sustituir por stock.
+- Las traducciones completas siguen pendientes; se ha retirado el selector que solo cambiaba el idioma visual sin traducir el contenido.
 
 ## Información de negocio confirmada
 

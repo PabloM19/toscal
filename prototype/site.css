@@ -1,4 +1,4 @@
-/* Home redesign. Kept separate from the styles used by the inner pages. */
+/* Shared visual system, based on the approved Toscal Garden home. */
 .home {
   --home-muted: #59685d;
   --home-surface: #f0eee5;
@@ -14,7 +14,7 @@
 .home.has-scrolled .nav-row { height: 76px; }
 .home .logo img { width: 200px; }
 .home .nav-links { gap: 1px; }
-.home .nav-links > a, .home .nav-trigger { font-size: 13px; font-weight: 500; padding: 12px 13px; }
+.home .nav-links > a, .home .nav-trigger { border-radius: 2px; font-size: 13px; font-weight: 500; padding: 12px 13px; }
 .home .nav-cta { display: inline-flex; align-items: center; gap: 18px; padding: 13px 19px; border-radius: 2px; background: var(--green); font-size: 12px; font-weight: 500; }
 .home .nav-cta:hover { background: #245541; transform: none; }
 .home .nav-cta .home-icon { width: 16px; height: 16px; flex-basis: 16px; }

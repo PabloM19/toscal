@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guía interna de diseño y mapa de las páginas de Toscal Garden." />
+    <meta name="robots" content="noindex,follow" />
+    <title>Guía visual y mapa web | Toscal Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="pages.css" />
+  </head>
+  <body class="home inner-page page-guide">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <svg class="home-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+      <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7" /></symbol>
+      <symbol id="arrow-diagonal" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" /></symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7" /></symbol>
+      <symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19C1 8 11 3 21 3c0 11-5 20-16 16ZM5 19l9-9M4 20l-1 1" /></symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+      <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="phone" viewBox="0 0 24 24"><path d="m8 3 3 5-3 3c1 2 3 4 5 5l3-3 5 3c0 3-2 5-5 5C9 20 4 15 3 8c0-3 2-5 5-5Z"/></symbol>
+      <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></symbol>
+    </defs></svg>
+    <div class="site-chrome">
+      <div class="utility-bar">
+        <div class="wrap utility-inner">
+          <a href="visitanos.html">Un garden mediterráneo en Xàbia</a>
+          <span>Lun - Sáb 08:00 - 18:30 · Dom y festivos 09:00 - 14:00</span>
+        </div>
+      </div>
+      <header class="site-header" data-header>
+        <div class="wrap nav-row">
+          <a class="logo" href="index.html" aria-label="Toscal Garden, inicio">
+            <img src="assets/logo-toscal.png" width="350" height="124" alt="Toscal Garden. Plantas, decoración y jardinería" />
+          </a>
+          <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+            <div class="nav-links">
+            <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="mega-menu">Descubrir <svg class="chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 4.2 6 8l3.8-3.8" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="mega-menu" id="mega-menu" aria-hidden="true" inert>
+              <div class="wrap mega-grid">
+                <div class="mega-intro">
+                  <p class="overline">EXPLORA TOSCAL</p>
+                  <h2>Todo lo que tu jardín necesita.</h2>
+                  <p>Desde la planta adecuada hasta el último detalle para disfrutarla.</p>
+                  <a href="plantas.html" class="arrow-link">Ver todas las categorías <span>→</span></a>
+                </div>
+                <div class="mega-links">
+                  <a href="plantas.html#exterior">
+                    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21V11M12 11c-4 0-7-3-8-8 5 1 8 4 8 8Zm0 0c4 0 7-3 8-8-5 1-8 4-8 8Z"/></svg></span>
+                    <span><b>Plantas de exterior</b><small>Árboles, palmeras, arbustos y flor</small></span>
+                  </a>
+                  <a href="plantas.html#interior">
+                    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 19c8-1 12-8 12-16-8 1-14 7-14 14 4-1 7-1 9 0"/><path d="M7 17c2-3 5-5 9-6"/></svg></span>
+                    <span><b>Plantas de interior</b><small>Verdes, cactus, bonsáis y más</small></span>
+                  </a>
+                  <a href="productos.html#macetas">
+                    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 10h8l-1.1 9H9.1L8 10Z"/><path d="M7 10V8h10v2M12 8V4"/></svg></span>
+                    <span><b>Macetas y cerámica</b><small>Interior, exterior y decoración</small></span>
+                  </a>
+                  <a href="productos.html#riego">
+                    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3s6 7 6 11a6 6 0 1 1-12 0c0-4 6-11 6-11Z"/></svg></span>
+                    <span><b>Riego y ferretería</b><small>Herramientas y soluciones prácticas</small></span>
+                  </a>
+                  <a href="floristeria.html">
+                    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="2.2"/><path d="M12 5c1.6 2 1.6 4 0 5-1.6-1-1.6-3 0-5Zm7 7c-2 1.6-4 1.6-5 0 1-1.6 3-1.6 5 0ZM12 19c-1.6-2-1.6-4 0-5 1.6 1 1.6 3 0 5ZM5 12c2-1.6 4-1.6 5 0-1 1.6-3 1.6-5 0Z"/></svg></span>
+                    <span><b>Floristería</b><small>Ramos y composiciones para cada ocasión</small></span>
+                  </a>
+                  <a href="proyectos.html">
+                    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 10h16M10 10v10"/></svg></span>
+                    <span><b>Jardines y paisajismo</b><small>Diseño y construcción de jardines</small></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="index.html#el-garden">El garden</a>
+            <a href="proyectos.html">Crear mi jardín</a>
+            <a href="visitanos.html">Visítanos</a>
+            </div>
+            <div class="nav-tools">
+              <a class="home-header-phone" href="tel:+34965795099">965 79 50 99</a>
+              <a class="nav-cta" href="visitanos.html">Ven al garden <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a>
+            </div>
+          </nav>
+          <button class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+        </div>
+      </header>
+    </div>
+    <main id="contenido"><section class="wrap tg-guide-intro"><p class="tg-eyebrow">TOSCAL GARDEN · GUÍA INTERNA</p><h1>Una misma raíz.<br /> <em>Todo un lenguaje.</em></h1><p>El estilo aprobado de la home, convertido en una guía común para todas las páginas: fotografía, color, tipografía y pequeños detalles que unen la experiencia.</p><nav class="tg-guide-nav" aria-label="Contenido de la guía"><a href="#mapa">Mapa de páginas</a><a href="#paleta">Colores</a><a href="#tipografia">Tipografía</a><a href="#componentes">Componentes</a><a href="#formularios">Formularios</a></nav></section>
+<section class="wrap tg-section" id="mapa"><div class="tg-heading"><div><p class="tg-eyebrow">01 · RECORRIDO DE LA WEB</p><h2>Seis páginas.<br /> <em>Una misma Toscal.</em></h2></div><p>Las URLs y sus anclas se conservan. Cada página comparte cabecera, pie y componentes, con un recorrido propio para su contenido.</p></div><div class="tg-map-list"><a href="index.html"><span>01</span><strong>Inicio</strong><small>index.html<br />Descubrir, elegir y visitar</small><em>Home aprobada</em><svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a href="plantas.html"><span>02</span><strong>Plantas y árboles</strong><small>plantas.html<br />Interior · exterior · ejemplares</small><em>Rediseñada</em><svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a href="productos.html"><span>03</span><strong>Productos</strong><small>productos.html<br />Macetas · riego · decoración</small><em>Rediseñada</em><svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a href="floristeria.html"><span>04</span><strong>Floristería</strong><small>floristeria.html<br />Flores · regalos · encargos</small><em>Rediseñada</em><svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a href="proyectos.html"><span>05</span><strong>Crear mi jardín</strong><small>proyectos.html<br />Servicio · proceso · formulario</small><em>Rediseñada</em><svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a href="visitanos.html"><span>06</span><strong>Visítanos</strong><small>visitanos.html<br />Dirección · horario · mapa</small><em>Rediseñada</em><svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div></section><section class="tg-tone" id="paleta"><div class="wrap tg-section"><div class="tg-heading"><div><p class="tg-eyebrow">02 · COLORES</p><h2>Los colores<br /> <em>de nuestra tierra.</em></h2></div><p>Verde profundo y crema como base. Arena para dar calidez y terracota en los detalles.</p></div><div class="tg-swatches"><article class="tg-swatch"><div style="--swatch:#102820"></div><h3>Verde tinta</h3><p>#102820 · Texto principal</p></article><article class="tg-swatch"><div style="--swatch:#173b30"></div><h3>Verde Toscal</h3><p>#173b30 · Acciones y fondos</p></article><article class="tg-swatch"><div style="--swatch:#496355"></div><h3>Musgo</h3><p>#496355 · Texto secundario</p></article><article class="tg-swatch"><div style="--swatch:#f9f6ef"></div><h3>Crema</h3><p>#f9f6ef · Fondo y contraste</p></article><article class="tg-swatch"><div style="--swatch:#e8ddcd"></div><h3>Arena</h3><p>#e8ddcd · Franjas y acentos</p></article><article class="tg-swatch"><div style="--swatch:#b75b3d"></div><h3>Terracota</h3><p>#b75b3d · Cursivas y detalles</p></article></div></div></section><section class="wrap tg-section" id="tipografia"><div class="tg-heading"><div><p class="tg-eyebrow">03 · TIPOGRAFÍA</p><h2>Carácter y<br /> <em>claridad.</em></h2></div><p>Una serif cálida para las ideas grandes. Una sans sencilla para todo lo que hay que leer, encontrar y hacer.</p></div><div class="tg-type-grid"><div><p class="tg-eyebrow">FRAUNCES · TITULARES</p><p class="tg-serif-sample">Donde empieza<br /><em>tu lado verde.</em></p><p>Peso 400. Cursiva para una frase breve. Titulares amplios, espaciado contenido y líneas naturales.</p></div><div><p class="tg-eyebrow">DM SANS · TEXTO Y ACCIONES</p><p class="tg-sans-sample">Plantas, personas<br />y una forma de vivir.</p><p>Pesos 400, 500 y 600. Texto de contenido entre 14 y 16 px, con interlineado generoso. Etiquetas pequeñas y acciones con un nombre claro.</p></div></div></section>
+<section class="tg-tone" id="componentes"><div class="wrap tg-section"><div class="tg-heading"><div><p class="tg-eyebrow">04 · ACCIONES Y FORMAS</p><h2>Detalles que<br /> <em>te llevan más lejos.</em></h2></div><p>Botones y hovers del menú rectangulares, con radio de 2 px. Líneas finas y flechas que llevan a un destino. El mismo lenguaje en cada página.</p></div><div class="tg-component-grid"><div class="tg-component-demo"><h3>Sobre fondo claro</h3><div class="tg-actions"><a class="home-button" href="plantas.html">Descubre las plantas <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a class="home-text-link" href="visitanos.html">Prepara tu visita <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div><p>Verde para la acción principal. Enlace de texto para continuar sin competir con ella.</p></div><div class="tg-component-demo tg-demo-dark"><h3>Sobre verde o fotografía</h3><div class="tg-actions"><a class="home-button home-button-cream" href="proyectos.html">Cuéntanos tu proyecto <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a class="home-text-link" href="visitanos.html">Ven al garden <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div><p>Crema como contraste. El foco de teclado y el tamaño de las acciones deben seguir siendo claros.</p></div></div></div></section>
+<section class="wrap tg-section" id="formularios"><div class="tg-heading"><div><p class="tg-eyebrow">05 · FORMULARIOS Y ESTADOS</p><h2>Conversar<br /> empieza por <em>escuchar.</em></h2></div><p>Etiquetas visibles, campos amplios y validación cerca de la acción. El formulario real de proyectos aplica estos mismos criterios en cuatro pasos.</p></div><div class="tg-component-grid"><div class="tg-component-demo"><h3>Campos y validación</h3><form class="tg-demo-form" data-demo-form><label>Nombre<input name="nombre" autocomplete="off" placeholder="Cómo te llamas" required /></label><label>¿Qué te apetece descubrir?<select name="interes"><option>Plantas y árboles</option><option>Macetas y productos</option><option>Un proyecto de jardín</option></select></label><label>Tu idea<textarea name="idea" placeholder="Cuéntanos un poco más…" required></textarea></label><label class="tg-demo-check"><input type="checkbox" required />Quiero probar la validación del ejemplo.</label><button class="home-button" type="submit">Probar validación</button><p class="tg-demo-status" role="status"></p></form></div><div class="tg-component-demo"><h3>Información que se abre</h3><div class="tg-faq"><details open><summary>¿Cómo aplicamos el diseño a cada página?</summary><p>Con los mismos colores, tipografías, cabecera y pie. Las colecciones, los procesos, los formularios y el mapa se adaptan a lo que necesita cada recorrido.</p></details><details><summary>¿Qué guía el uso de las imágenes?</summary><p>Fotografía real de Toscal, protagonista y sin marcos en el hero. En las colecciones, la información se coloca debajo de la imagen para que se lea con calma.</p></details><details><summary>¿Cómo se adapta al móvil?</summary><p>Los bloques pasan a una columna, las imágenes conservan su presencia y el menú se transforma en un acordeón con todas las categorías.</p></details></div><p>Las interacciones respetan el movimiento reducido y mantienen un foco visible al navegar con teclado.</p><a class="home-text-link" href="proyectos.html#solicitud">Ver el formulario real <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div></div></section></main>
+    <footer class="home-footer">
+      <div class="wrap home-footer-main">
+        <div class="home-footer-brand"><a href="index.html" aria-label="Toscal Garden, inicio"><img src="assets/logo-toscal.png" width="350" height="124" alt="Toscal Garden" loading="lazy" /></a><p>Plantas, personas y una forma<br />mediterránea de vivir.</p></div>
+        <div><h2>Descubre</h2><a href="plantas.html">Plantas y árboles</a><a href="productos.html">Macetas y productos</a><a href="floristeria.html">Flores y decoración</a><a href="proyectos.html">Crear mi jardín</a></div>
+        <div><h2>Ven al garden</h2><a href="visitanos.html">Cómo llegar</a><p>Camí Assagador de Cabanes, s/n<br />03730 Xàbia, Alicante</p><p>L–S 08:00–18:30<br />Dom. y festivos 09:00–14:00</p></div>
+        <div><h2>Sigamos hablando</h2><a href="tel:+34965795099">965 79 50 99</a><a href="mailto:toscal@toscalgarden.com">toscal@toscalgarden.com</a><a href="https://wa.me/34965795099" target="_blank" rel="noopener noreferrer">WhatsApp <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div>
+      </div>
+      <div class="wrap home-footer-bottom"><span>© 2026 Toscal Garden S.L.</span><span>Hecho para crecer.</span><nav aria-label="Información legal"><a href="https://toscalgarden.eu/aviso-legal/">Aviso legal</a><a href="https://toscalgarden.eu/politica-de-privacidad/">Privacidad</a><a href="https://toscalgarden.eu/politica-de-cookies/">Cookies</a></nav></div>
+    </footer>
+    <script src="site.js" defer></script>
+    <script src="guia.js" defer></script>
+  </body>
+</html>

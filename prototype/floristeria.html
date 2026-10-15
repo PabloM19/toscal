@@ -7,16 +7,28 @@
     <title>Floristería en Xàbia | Toscal Garden</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="pages.css" />
   </head>
-  <body>
+  <body class="home inner-page page-floristeria">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <svg class="home-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+      <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7" /></symbol>
+      <symbol id="arrow-diagonal" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" /></symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7" /></symbol>
+      <symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19C1 8 11 3 21 3c0 11-5 20-16 16ZM5 19l9-9M4 20l-1 1" /></symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+      <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="phone" viewBox="0 0 24 24"><path d="m8 3 3 5-3 3c1 2 3 4 5 5l3-3 5 3c0 3-2 5-5 5C9 20 4 15 3 8c0-3 2-5 5-5Z"/></symbol>
+      <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></symbol>
+    </defs></svg>
     <div class="site-chrome">
       <div class="utility-bar">
         <div class="wrap utility-inner">
-          <a href="visitanos.html">Camí Assagador de Cabanes, s/n · Xàbia</a>
+          <a href="visitanos.html">Un garden mediterráneo en Xàbia</a>
           <span>Lun - Sáb 08:00 - 18:30 · Dom y festivos 09:00 - 14:00</span>
         </div>
       </div>
@@ -28,10 +40,7 @@
           <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
             <div class="nav-links">
             <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="mega-menu">Descubrir <svg class="chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 4.2 6 8l3.8-3.8" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <a href="proyectos.html">Crear mi jardín</a>
-            <a href="visitanos.html">Visítanos</a>
-            </div>
-            <div class="mega-menu" id="mega-menu" aria-hidden="true">
+            <div class="mega-menu" id="mega-menu" aria-hidden="true" inert>
               <div class="wrap mega-grid">
                 <div class="mega-intro">
                   <p class="overline">EXPLORA TOSCAL</p>
@@ -56,7 +65,7 @@
                     <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3s6 7 6 11a6 6 0 1 1-12 0c0-4 6-11 6-11Z"/></svg></span>
                     <span><b>Riego y ferretería</b><small>Herramientas y soluciones prácticas</small></span>
                   </a>
-                  <a class="is-active" href="floristeria.html">
+                  <a href="floristeria.html" aria-current="page">
                     <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="2.2"/><path d="M12 5c1.6 2 1.6 4 0 5-1.6-1-1.6-3 0-5Zm7 7c-2 1.6-4 1.6-5 0 1-1.6 3-1.6 5 0ZM12 19c-1.6-2-1.6-4 0-5 1.6 1 1.6 3 0 5ZM5 12c2-1.6 4-1.6 5 0-1 1.6-3 1.6-5 0Z"/></svg></span>
                     <span><b>Floristería</b><small>Ramos y composiciones para cada ocasión</small></span>
                   </a>
@@ -67,14 +76,13 @@
                 </div>
               </div>
             </div>
+            <a href="index.html#el-garden">El garden</a>
+            <a href="proyectos.html">Crear mi jardín</a>
+            <a href="visitanos.html">Visítanos</a>
+            </div>
             <div class="nav-tools">
-              <button class="language-toggle" type="button" aria-label="Elegir idioma" aria-expanded="false"><span class="lang-code">ES</span><svg class="chevron" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.2 4.2 6 8l3.8-3.8" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-              <div class="language-menu" aria-label="Idiomas">
-                <button type="button" data-lang="es" class="is-current">Español</button>
-                <button type="button" data-lang="en">English</button>
-                <button type="button" data-lang="nl">Nederlands</button>
-              </div>
-              <a class="nav-cta" href="visitanos.html">Visitar el garden</a>
+              <a class="home-header-phone" href="tel:+34965795099">965 79 50 99</a>
+              <a class="nav-cta" href="visitanos.html">Ven al garden <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a>
             </div>
           </nav>
           <button class="mobile-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
@@ -82,123 +90,17 @@
       </header>
     </div>
     <main id="contenido">
-      <section class="page-hero" style="background-image:url('../fotos_toscal/WhatsApp%20Unknown%202026-09-24%20at%2011.41.50/WhatsApp%20Image%202026-09-23%20at%2018.54.54.jpeg')">
-        <div class="page-hero-inner">
-          <p class="breadcrumb">Inicio / Floristería</p>
-          <h1>Hay detalles que se dicen mejor con flores.</h1>
-          <p>Ramos, composiciones y plantas elegidas con intención para un regalo, una ocasión o simplemente un día que merece celebrarse.</p>
-        </div>
-      </section>
-      <section class="page-section reveal">
-        <div class="split-content">
-          <figure>
-            <img src="../fotos_toscal/WhatsApp%20Unknown%202026-09-24%20at%2011.41.34/WhatsApp%20Image%202026-09-23%20at%2019.04.49.jpeg" width="900" height="1100" alt="Selección de plantas en Toscal Garden" loading="lazy" />
-          </figure>
-          <div>
-            <p class="overline">FLORISTERÍA TOSCAL</p>
-            <h2>Una floristería dentro del garden.</h2>
-            <p>Una sección del garden para regalos y ocasiones: ramo, planta o composición. El equipo trabaja con la ocasión, el estilo de la casa y un presupuesto claro.</p>
-            <ul class="check-list">
-              <li>Ramos y composiciones florales</li>
-              <li>Plantas y macetas para regalar</li>
-              <li>Flores secas y detalles de nacimiento</li>
-            </ul>
-            <a class="link-arrow" href="https://wa.me/34965795099" target="_blank" rel="noopener">Habla con el equipo por WhatsApp →</a>
-          </div>
-        </div>
-      </section>
-      <section class="page-section reveal">
-        <div class="section-heading">
-          <p class="overline">PARA QUÉ VENIR</p>
-          <h2>Flores con criterio, no un mostrador de paso.</h2>
-          <p>Dinos el momento. Te proponemos algo que se sienta elegido, del garden de Xàbia, no de un catálogo anónimo.</p>
-        </div>
-        <div class="visual-grid">
-          <article class="visual-card">
-            <img src="../fotos_toscal/WhatsApp%20Unknown%202026-09-24%20at%2011.41.50/WhatsApp%20Image%202026-09-23%20at%2018.54.54.jpeg" width="800" height="640" alt="Entrada de floristería y decoración" loading="lazy" />
-            <h3>Ramo del día</h3>
-            <p>Flores de temporada, paleta serena. Para casa o para una mesa que se usa.</p>
-          </article>
-          <article class="visual-card">
-            <img src="../fotos_toscal/WhatsApp%20Unknown%202026-09-24%20at%2011.41.34/WhatsApp%20Image%202026-09-23%20at%2019.04.49.jpeg" width="800" height="640" alt="Plantas para regalar" loading="lazy" />
-            <h3>Regalo y planta</h3>
-            <p>Una planta bien macetada dura más. Luz y riego para quien la recibe.</p>
-          </article>
-          <article class="visual-card">
-            <img src="../fotos_toscal/WhatsApp%20Unknown%202026-09-24%20at%2011.41.50/WhatsApp%20Image%202026-09-23%20at%2018.55.10.jpeg" width="800" height="640" alt="Composiciones y cerámica" loading="lazy" />
-            <h3>Celebraciones</h3>
-            <p>Cumpleaños, bienvenidas. Composiciones de casa de costa, no de evento genérico.</p>
-          </article>
-          <article class="visual-card">
-            <img src="../fotos_toscal/WhatsApp%20Image%202026-09-23%20at%2019.06.13.jpeg" width="800" height="640" alt="Plantas de exterior" loading="lazy" />
-            <h3>Condolencias</h3>
-            <p>Arreglos sobrios. Si puedes, avisa con unas horas.</p>
-          </article>
-          <article class="visual-card">
-            <img src="../fotos_toscal/WhatsApp%20Unknown%202026-09-24%20at%2011.41.34/WhatsApp%20Image%202026-09-23%20at%2019.04.51.jpeg" width="800" height="640" alt="Aromáticas y texturas" loading="lazy" />
-            <h3>Flores secas</h3>
-            <p>Piezas que se quedan. Textura para consola o entrada.</p>
-          </article>
-          <article class="visual-card">
-            <img src="../fotos_toscal/WhatsApp%20Image%202026-09-23%20at%2019.05.26.jpeg" width="800" height="640" alt="Garden Toscal" loading="lazy" />
-            <h3>Encargo puntual</h3>
-            <p>Color, tamaño y presupuesto. WhatsApp o visita: sin pedido online.</p>
-          </article>
-        </div>
-        <p class="note-soft">La floristería sigue el ritmo del garden. Para un encargo concreto, llama o escribe el mismo día.</p>
-      </section>
-      <section class="cta-band">
-        <div class="cta-band-inner">
-          <h2>Un regalo no tiene que ser complicado.<br />Solo tiene que sentirse elegido.</h2>
-          <div class="cta-actions">
-            <a class="button-light" href="visitanos.html">Ven a floristería →</a>
-            <a class="button-light" href="https://wa.me/34965795099" target="_blank" rel="noopener">WhatsApp ↗</a>
-          </div>
-        </div>
-      </section>
+<section class="tg-hero" aria-labelledby="page-title"><img src="assets/catalogo/flores-1200.webp" srcset="assets/catalogo/flores-640.webp 640w, assets/catalogo/flores-1200.webp 1200w, assets/catalogo/flores-1536.webp 1536w" sizes="100vw" width="1200" height="1600" alt="Flores de temporada en las mesas del garden" fetchpriority="high" /><div class="wrap tg-hero-inner"><p class="tg-eyebrow tg-eyebrow-light"><span></span>FLORISTERÍA TOSCAL</p><h1 id="page-title">Hay detalles<br /> <em>que florecen.</em></h1><p class="tg-hero-intro">Para regalar, para celebrar o para alegrarte el día. Flores, plantas y composiciones elegidas contigo.</p><div class="tg-actions"><a class="home-button home-button-cream" href="https://wa.me/34965795099" target="_blank" rel="noopener noreferrer">Cuéntanos la ocasión <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a class="home-text-link" href="visitanos.html">Ven a la floristería <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div></div></section><nav class="wrap tg-page-nav" aria-label="En esta página"><div class="tg-breadcrumb"><a href="index.html">Inicio</a><span>/</span><span>Floristería</span></div><div><a href="#floristeria">La floristería</a><a href="#ocasiones">Para cada ocasión</a><a href="#encargo">Tu encargo</a></div></nav><section class="tg-tone" id="floristeria"><div class="wrap tg-split home-reveal"><figure><img src="assets/home/decoracion-interior-900.webp" srcset="assets/home/decoracion-interior-480.webp 480w, assets/home/decoracion-interior-900.webp 900w, assets/home/decoracion-interior-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 40px), 45vw" width="1200" height="1600" alt="Plantas y detalles para el hogar en el interior de Toscal" loading="lazy" decoding="async" /></figure><div><p class="tg-eyebrow">FLORES, PLANTAS Y PERSONAS</p><h2>Un pequeño detalle.<br /> <em>Una gran sonrisa.</em></h2><p>Dentro del garden hay un lugar para los regalos y las ocasiones especiales. Cuéntanos para quién es, qué te apetece y tu presupuesto. El equipo te ayuda a elegir.</p><ul class="tg-list"><li>Ramos y composiciones florales</li><li>Plantas y macetas para regalar</li><li>Flores secas y pequeños detalles</li></ul><a class="home-text-link" href="https://wa.me/34965795099" target="_blank" rel="noopener noreferrer">Habla con la floristería <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div></div></section><section class="wrap tg-section home-reveal" id="ocasiones"><div class="tg-heading"><div><p class="tg-eyebrow">PARA LOS DÍAS QUE IMPORTAN</p><h2>Cada ocasión,<br /> <em>a tu manera.</em></h2></div><p>Un ramo para casa, una planta para alguien especial o una composición para acompañar un momento. Lo elegimos contigo.</p></div><div class="tg-family-grid"><article><span>01</span><div><h3>Flores para casa</h3><p>Color y frescura para la mesa, la entrada o tu rincón favorito.</p></div></article><article><span>02</span><div><h3>Plantas para regalar</h3><p>Un regalo que crece. Con consejos de luz y riego para quien lo recibe.</p></div></article><article><span>03</span><div><h3>Celebraciones</h3><p>Cumpleaños y bienvenidas con una composición personal.</p></div></article><article><span>04</span><div><h3>Condolencias</h3><p>Arreglos sobrios para acompañar con delicadeza.</p></div></article><article><span>05</span><div><h3>Flores secas</h3><p>Texturas y composiciones que permanecen en casa.</p></div></article><article><span>06</span><div><h3>Tu encargo</h3><p>Dinos color, tamaño, ocasión y presupuesto. Consultamos las opciones del momento.</p></div></article></div></section><section class="tg-floral-pair wrap home-reveal"><figure><img src="assets/catalogo/flores-1200.webp" srcset="assets/catalogo/flores-640.webp 640w, assets/catalogo/flores-1200.webp 1200w, assets/catalogo/flores-1536.webp 1536w" sizes="(max-width: 700px) calc(100vw - 40px), 45vw" width="1200" height="1600" alt="Flores de temporada a la luz natural" loading="lazy" decoding="async" /><figcaption>Un poco de color cambia el día.</figcaption></figure><figure><img src="assets/catalogo/interior-1200.webp" srcset="assets/catalogo/interior-640.webp 640w, assets/catalogo/interior-1200.webp 1200w, assets/catalogo/interior-1536.webp 1536w" sizes="(max-width: 700px) calc(100vw - 40px), 45vw" width="1200" height="1600" alt="Plantas verdes y macetas para regalar" loading="lazy" decoding="async" /><figcaption>Y una planta puede acompañarlo mucho tiempo.</figcaption></figure></section><div id="encargo"><section class="tg-closing"><div class="wrap"><div><p class="tg-eyebrow">LO BONITO EMPIEZA CON UNA IDEA</p><h2>¿Para quién<br /> <em>son estas flores?</em></h2><p>Consúltanos con antelación para preparar tu encargo y confirmar las flores disponibles.</p></div><div class="tg-closing-actions"><a class="home-button home-button-cream" href="https://wa.me/34965795099" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a><a class="home-text-link" href="tel:+34965795099">Llamar a floristería <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div></div></section></div>
     </main>
-    <footer class="site-footer">
-      <div class="wrap footer-top">
-        <div>
-          <a class="logo footer-logo" href="index.html"><img src="assets/logo-toscal.png" width="350" height="124" alt="Toscal Garden" /></a>
-          <p>Tu centro de jardinería en Xàbia para plantas, ideas y jardines que se viven mejor.</p>
-          <div class="socials">
-            <span title="Perfil de Facebook pendiente de confirmar" aria-label="Facebook, pendiente de confirmar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1Z"/></svg></span>
-            <span title="Perfil de Instagram pendiente de confirmar" aria-label="Instagram, pendiente de confirmar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/></svg></span>
-            <a href="https://wa.me/34965795099" aria-label="WhatsApp de Toscal Garden"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3.2A8.7 8.7 0 0 0 3.4 12c0 1.5.4 3 1.1 4.3L3 21l4.6-1.5A8.8 8.8 0 0 0 12 20.8 8.7 8.7 0 0 0 12 3.2Zm4.9 12.4c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.2-3-.8-2.5-1.2-4.1-3.9-4.2-4.1-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1 2.2 1.3 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.5 0 .1 0 .5-.2.7Z"/></svg></a>
-          </div>
-        </div>
-        <div>
-          <h3>Descubre</h3>
-          <a href="plantas.html">Plantas y árboles</a>
-          <a href="productos.html#macetas">Macetas y cerámica</a>
-          <a href="productos.html#riego">Riego y ferretería</a>
-          <a href="floristeria.html">Floristería</a>
-        </div>
-        <div>
-          <h3>Servicios</h3>
-          <a href="proyectos.html">Crear mi jardín</a>
-          <a href="visitanos.html">Visítanos</a>
-          <a href="tel:+34965795099">Llamar al garden</a>
-          <a href="https://wa.me/34965795099">Consultar por WhatsApp</a>
-        </div>
-        <div>
-          <h3>Contacto</h3>
-          <a href="tel:+34965795099">965 79 50 99</a>
-          <a href="mailto:toscal@toscalgarden.com">toscal@toscalgarden.com</a>
-          <p>Camí Assagador de Cabanes, s/n<br />03730 Xàbia, Alicante</p>
-        </div>
+    <footer class="home-footer">
+      <div class="wrap home-footer-main">
+        <div class="home-footer-brand"><a href="index.html" aria-label="Toscal Garden, inicio"><img src="assets/logo-toscal.png" width="350" height="124" alt="Toscal Garden" loading="lazy" /></a><p>Plantas, personas y una forma<br />mediterránea de vivir.</p></div>
+        <div><h2>Descubre</h2><a href="plantas.html">Plantas y árboles</a><a href="productos.html">Macetas y productos</a><a href="floristeria.html">Flores y decoración</a><a href="proyectos.html">Crear mi jardín</a></div>
+        <div><h2>Ven al garden</h2><a href="visitanos.html">Cómo llegar</a><p>Camí Assagador de Cabanes, s/n<br />03730 Xàbia, Alicante</p><p>L–S 08:00–18:30<br />Dom. y festivos 09:00–14:00</p></div>
+        <div><h2>Sigamos hablando</h2><a href="tel:+34965795099">965 79 50 99</a><a href="mailto:toscal@toscalgarden.com">toscal@toscalgarden.com</a><a href="https://wa.me/34965795099" target="_blank" rel="noopener noreferrer">WhatsApp <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></div>
       </div>
-      <div class="wrap footer-bottom">
-        <span>© 2026 Toscal Garden S.L. Todos los derechos reservados.</span>
-        <span>
-          <a href="https://toscalgarden.eu/aviso-legal/">Aviso legal</a>
-          <a href="https://toscalgarden.eu/politica-de-privacidad/">Privacidad</a>
-          <a href="https://toscalgarden.eu/politica-de-cookies/">Cookies</a>
-          <button type="button">Configurar cookies</button>
-        </span>
-      </div>
+      <div class="wrap home-footer-bottom"><span>© 2026 Toscal Garden S.L.</span><span>Hecho para crecer.</span><nav aria-label="Información legal"><a href="https://toscalgarden.eu/aviso-legal/">Aviso legal</a><a href="https://toscalgarden.eu/politica-de-privacidad/">Privacidad</a><a href="https://toscalgarden.eu/politica-de-cookies/">Cookies</a></nav></div>
     </footer>
-    <script src="app.js"></script>
+    <script src="site.js" defer></script>
   </body>
 </html>
