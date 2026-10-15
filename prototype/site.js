@@ -4,7 +4,7 @@
   const megaMenu = document.querySelector('.mega-menu');
   const mobileButton = document.querySelector('.mobile-toggle');
   const primaryNav = document.querySelector('.primary-nav');
-  const mobile = window.matchMedia('(max-width: 800px)');
+  const mobile = window.matchMedia('(max-width: 50em)');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   function setMega(open) {

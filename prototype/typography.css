@@ -1,46 +1,137 @@
-/* One scale across the home, interior pages and design guide. */
+/* Single typographic source: sizes in rem respect the reader's font preference.
+   Components own layout and color; they do not define their own font sizes. */
 :root {
-  --type-h1: clamp(64px, 6.5vw, 98px);
-  --type-h2: clamp(40px, 4.1vw, 61px);
-  --type-h3: 28px;
-  --type-body: 14px;
+  --text-h1: clamp(4rem, 6.5vw, 6.125rem);
+  --text-h2: clamp(2.5rem, 4.1vw, 3.8125rem);
+  --text-h3: 1.75rem;
+  --text-h4: 1.375rem;
+  --text-h5: 1.125rem;
+  --text-h6: 1rem;
+  --text-lead: 1.125rem;
+  --text-body: 1rem;
+  --text-control: 1rem;
+  --text-nav: 1rem;
+  --text-small: .875rem;
+  --text-label: .875rem;
+  --text-meta: .8125rem;
+  --text-stat: 2.0625rem;
+  --leading-body: 1.7;
+  --leading-control: 1.5;
+  --leading-small: 1.6;
+  --leading-label: 1.5;
+  --weight-body: 400;
+  --weight-action: 500;
+}
+.home { font: var(--weight-body) var(--text-body)/var(--leading-body) var(--sans); }
+/* Reset inherited legacy sizes on generic elements, including nested text runs. */
+.home :where(a, button, input, select, textarea, label, span, div, small, strong, b, em, li, dt, dd, figcaption) {
+  font-size: inherit;
+  line-height: inherit;
 }
 .home :is(h1, h2, h3, h4, h5, h6) {
   font-family: var(--serif);
-  font-weight: 400;
+  font-weight: var(--weight-body);
   font-style: normal;
   text-transform: none;
+  overflow-wrap: break-word;
 }
-.home h1 { font-size: var(--type-h1); line-height: 1.04; letter-spacing: -.052em; }
-.home h2 { font-size: var(--type-h2); line-height: 1.08; letter-spacing: -.052em; }
-.home h3 { font-size: var(--type-h3); line-height: 1.25; letter-spacing: -.04em; }
-.home h4 { font-size: 22px; line-height: 1.3; letter-spacing: -.03em; }
-.home h5 { font-size: 18px; line-height: 1.4; letter-spacing: -.02em; }
-.home h6 { font-size: 16px; line-height: 1.5; letter-spacing: 0; }
-.home p, .home address {
-  font-family: var(--sans);
-  font-size: var(--type-body);
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.85;
+.home h1 { font-size: var(--text-h1); line-height: 1.04; letter-spacing: -.052em; }
+.home h2 { font-size: var(--text-h2); line-height: 1.08; letter-spacing: -.052em; }
+.home h3 { font-size: var(--text-h3); line-height: 1.25; letter-spacing: -.04em; }
+.home h4 { font-size: var(--text-h4); line-height: 1.3; letter-spacing: -.03em; }
+.home h5 { font-size: var(--text-h5); line-height: 1.4; letter-spacing: -.02em; }
+.home h6 { font-size: var(--text-h6); line-height: 1.5; letter-spacing: 0; }
+.home :is(p, address, .tg-list, .tg-hours) {
+  font: var(--weight-body) var(--text-body)/var(--leading-body) var(--sans);
   letter-spacing: 0;
   text-transform: none;
 }
 .home :is(h1, h2, h3, h4, h5, h6) em { font-weight: inherit; }
 .home h1 em { white-space: normal; }
-/* The guide's specimens demonstrate exactly the same production scale. */
-.home .tg-serif-sample { font-size: var(--type-h1); line-height: 1.04; letter-spacing: -.052em; }
-@media (max-width: 1000px) {
-  :root { --type-h1: clamp(58px, 7.5vw, 75px); }
+.home .type-lead { font-size: var(--text-lead); line-height: 1.6; }
+/* Actions and navigation never shrink on mobile. */
+.home :is(.home-button, .home-text-link, .home-hero-secondary, .home-care-link a, .arrow-link, .nav-cta, .home-header-phone, .wizard-nav button) {
+  font: var(--weight-action) var(--text-control)/var(--leading-control) var(--sans);
+  letter-spacing: 0;
 }
-@media (max-width: 700px) {
+.home :is(.nav-links > a, .nav-trigger, .mega-links b) {
+  font: var(--weight-action) var(--text-nav)/1.4 var(--sans);
+  letter-spacing: 0;
+}
+.home :is(.mega-links small, .home-paths small, .home-photo-note span span,
+  .home-hero-note, .home-story-stats span, .home-award p span, .home-project-topics,
+  .home-project-footnote, .home-visit-visual figcaption, .tg-proof span,
+  .choice small, .qualify-note, .tg-small, .tg-breadcrumb,
+  .tg-page-nav > div:last-child > a, .tg-guide-nav, .tg-map-list small,
+  .tg-demo-status, .home-footer-main p, .home-footer-main > div > a:not(:first-child)) {
+  font-family: var(--sans);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+  font-weight: var(--weight-body);
+  letter-spacing: 0;
+}
+.home :is(.home-footer-heading, .wizard-kicker, .wizard-fields label,
+  .wizard-field-heading, .tg-demo-form label) {
+  font: var(--weight-action) var(--text-label)/var(--leading-label) var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.home :is(.check-privacy, .tg-demo-check) { font-weight: var(--weight-body); }
+.home :is(.wizard-fields input, .wizard-fields textarea, .tg-demo-form input,
+  .tg-demo-form select, .tg-demo-form textarea) {
+  font: var(--weight-body) var(--text-control)/var(--leading-control) var(--sans);
+  letter-spacing: 0;
+}
+.home :is(.utility-bar, .home-eyebrow, .tg-eyebrow, .overline,
+  .home-image-label, .tg-collection-photo > span, .home-path-number,
+  .home-photo-location, .tg-family-grid > article > span,
+  .home-footer-bottom, .tg-map-list > a > span:first-child, .tg-map-list em) {
+  font: var(--weight-action) var(--text-meta)/var(--leading-label) var(--sans);
+  letter-spacing: .04em;
+}
+.home :is(.home-footer-bottom, .tg-map-list em) { font-weight: var(--weight-body); letter-spacing: 0; }
+.home :is(.home-eyebrow, .tg-eyebrow, .overline) { letter-spacing: .09em; }
+/* Editorial accents also use named roles rather than local pixel sizes. */
+.home :is(.home-paths strong, .choice b) {
+  font: var(--weight-body) var(--text-h4)/1.3 var(--serif);
+  letter-spacing: -.035em;
+}
+.home :is(.home-photo-note strong, .tg-map-list strong) {
+  font: var(--weight-body) var(--text-h3)/1.25 var(--serif);
+  letter-spacing: -.04em;
+}
+.home :is(.home-story-stats strong, .tg-proof strong, .tg-process li > span) {
+  font: var(--weight-body) var(--text-stat)/1.2 var(--serif);
+  letter-spacing: -.04em;
+}
+.home :is(.home-story-stats strong small, .tg-proof strong small) { font-size: var(--text-h5); }
+.home .tg-proof > div:last-child > strong { font-size: var(--text-h4); white-space: normal; }
+.home :is(.home-story-detail figcaption, .home-project-visual figcaption,
+  .tg-floral-pair figcaption, .tg-visit-gallery figcaption) {
+  font: italic var(--weight-body) var(--text-h4)/1.3 var(--serif);
+  letter-spacing: -.025em;
+}
+.home .home-footer-bottom > span:nth-child(2) { font: italic var(--weight-body) var(--text-body)/1.5 var(--serif); }
+.home .tg-serif-sample { font: var(--weight-body) var(--text-h1)/1.04 var(--serif); letter-spacing: -.052em; }
+.home .tg-sans-sample { font-size: var(--text-body); line-height: var(--leading-body); }
+@media (max-width: 62.5em) {
+  :root { --text-h1: clamp(3.625rem, 7.5vw, 4.6875rem); }
+}
+@media (max-width: 43.75em) {
   :root {
-    --type-h1: clamp(40px, 11vw, 67px);
-    --type-h2: clamp(36px, 8.5vw, 48px);
-    --type-h3: 26px;
+    --text-h1: clamp(2.5rem, 11vw, 4.1875rem);
+    --text-h2: clamp(2.25rem, 8.5vw, 3rem);
+    --text-h3: 1.625rem;
   }
   .home h1, .home .tg-serif-sample { line-height: 1.06; letter-spacing: -.05em; }
 }
-@media (max-width: 360px) {
-  :root { --type-h1: 37px; }
-}
+/* Public role utilities, also used by the live token specimens. */
+.home .type-body { font: var(--weight-body) var(--text-body)/var(--leading-body) var(--sans); }
+.home .type-h1 { font: var(--weight-body) var(--text-h1)/1.06 var(--serif); letter-spacing: -.05em; }
+.home .type-h2 { font: var(--weight-body) var(--text-h2)/1.08 var(--serif); letter-spacing: -.052em; }
+.home .type-h3 { font: var(--weight-body) var(--text-h3)/1.25 var(--serif); letter-spacing: -.04em; }
+.home .type-control { font: var(--weight-action) var(--text-control)/var(--leading-control) var(--sans); }
+.home .type-nav { font: var(--weight-action) var(--text-nav)/1.4 var(--sans); }
+.home .type-small { font: var(--weight-body) var(--text-small)/var(--leading-small) var(--sans); }
+.home .type-label { font: var(--weight-action) var(--text-label)/var(--leading-label) var(--sans); }
+.home .type-meta { font: var(--weight-action) var(--text-meta)/var(--leading-label) var(--sans); }

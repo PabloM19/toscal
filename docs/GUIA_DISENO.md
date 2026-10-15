@@ -4,15 +4,30 @@ Referencia aprobada: `prototype/index.html`, hero «Donde empieza tu lado verde�
 
 ## Tipografía
 
-- **Fraunces**, peso 400: titulares editoriales, cifras y nombres de colecciones. Cursiva para una frase corta de acento.
-- **DM Sans**, pesos 400–600: párrafos, navegación, botones, etiquetas y formularios.
-- Escala única en `prototype/typography.css`, aplicada a todas las páginas mediante `prototype/design.css`. Los estilos de composición se importan en la capa `layout`, por debajo de la tipografía: ningún componente cambia el tamaño de un nivel.
-- H1: `clamp(64px, 6.5vw, 98px)`; tablet `clamp(58px, 7.5vw, 75px)`; móvil `clamp(40px, 11vw, 67px)` y 37 px hasta 360 px. Peso 400, interlineado 1,04 (1,06 móvil).
-- H2: `clamp(40px, 4.1vw, 61px)`; móvil `clamp(36px, 8.5vw, 48px)`. Peso 400, interlineado 1,08.
-- H3: 28 px (26 px móvil), peso 400, interlineado 1,25. H4/H5/H6: 22/18/16 px.
-- Todos los párrafos y direcciones: DM Sans 14 px, peso 400, interlineado 1,85, sin espaciado adicional.
-- Las etiquetas superiores, rótulos del pie y muestras tipográficas usan elementos propios; no alteran la escala de párrafos ni titulares.
-- Cuerpo en verde oscuro o verde grisáceo; evitar párrafos centrados o titulares enteros en mayúsculas.
+Escala aplicada tras la auditoría del 15/10/2026. Fuente única: `prototype/typography.css`; entrada común: `prototype/design.css`. Los archivos de composición `site.css`, `hero.css` y `pages.css` no contienen tamaños de fuente ni abreviaturas `font`.
+
+| Token | Tamaño estándar | Uso |
+|---|---|---|
+| `--text-h1` | 40-98 px, fluido | Todos los H1, Fraunces 400, interlineado 1,04-1,06 |
+| `--text-h2` | 36-61 px, fluido | Todos los H2, Fraunces 400, interlineado 1,08 |
+| `--text-h3` | 26-28 px | Todos los H3, Fraunces 400, interlineado 1,25 |
+| `--text-lead` | 18 px | Entradilla explícita, interlineado 1,6 |
+| `--text-body` | 16 px | Párrafos, listas y direcciones de contenido, interlineado 1,7 |
+| `--text-control` | 16 px | Botones, enlaces de acción y campos, interlineado 1,5 |
+| `--text-nav` | 16 px | Menú y categorías, interlineado 1,4 |
+| `--text-small` | 14 px | Ayudas, descripciones secundarias y pie, interlineado 1,6 |
+| `--text-label` | 14 px | Etiquetas, progreso y rótulos del pie, interlineado 1,5 |
+| `--text-meta` | 13 px | Información auxiliar, numeración y legal, interlineado 1,5 |
+
+- DM Sans 400 para lectura y ayudas; 500 para acciones, etiquetas y navegación.
+- Tamaños en rem: equivalencias anteriores con raíz estándar de 16 px. No fijar el tamaño raíz, para respetar las preferencias del lector.
+- No reducir lectura, ayudas, navegación ni controles en móvil. Ningún texto visible por debajo de 13 px en configuración estándar.
+- H4/H5/H6 tienen tokens de 22/18/16 px. Cifras editoriales usan `--text-stat` de 33 px; sus leyendas, `--text-small`.
+- Las clases `type-*` muestran los mismos roles en la guía. Los textos anidados heredan tamaño; evitar excepciones por elemento span, small o div.
+- Los párrafos del pie y notas explícitamente secundarias usan small. Los demás párrafos de contenido usan body.
+- Cursiva de Fraunces para acentos cortos; conservar el mismo tamaño y peso del titular.
+- No añadir `font-size`, abreviaturas `font` o estilos inline en componentes: asignar un rol en typography.css.
+- La información necesaria para elegir, contactar o rellenar un formulario nunca usa meta.
 
 ## Colores
 

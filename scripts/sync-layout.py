@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] / 'prototype'
 source = (ROOT / 'index.html').read_text()
 header = source[source.index('    <a class="skip-link"'):source.index('    <main id="contenido">')]
-footer = source[source.index('    <footer class="home-footer">'):source.index('    <script src="site.js"')]
+footer = source[source.index('    <footer class="home-footer">'):source.index('    <script src="site.js')]
 for path in sorted(ROOT.glob('*.html')):
     if path.name == 'index.html':
         continue

@@ -19,6 +19,7 @@ python3 scripts/serve.py
 
 `prototype/` contiene inicio, plantas, productos, floristería, proyectos, visita y la guía interna. `fotos_toscal/` conserva las fotografías originales; `prototype/assets/` contiene los recursos optimizados.
 
+- `design.css`: entrada CSS común; `typography.css`: tokens compartidos y roles de texto.
 - `site.css` y `site.js`: sistema visual compartido, cabecera, pie y navegación.
 - `hero.css`: hero aprobado de la home.
 - `pages.css`: componentes de las páginas interiores y de la guía.
@@ -43,3 +44,5 @@ No requiere instalación ni build. Las carpetas `tmp/`, `output/` y `.codex-revi
 ## Vercel
 
 `vercel.json` publica `prototype/` como raíz de la web estática, sin build. En Vercel, el directorio raíz del proyecto debe ser la raíz del repositorio (`.`). La home se sirve en `/` y las páginas en `/plantas.html`, `/proyectos.html`, etc. Solo se publica el contenido de `prototype/`.
+
+La escala de lectura aplicada y sus comprobaciones se documentan en [docs/RESULTADO_TIPOGRAFIA.md](docs/RESULTADO_TIPOGRAFIA.md).
