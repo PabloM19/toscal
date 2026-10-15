@@ -6,7 +6,12 @@ Referencia aprobada: `prototype/index.html`, hero «Donde empieza tu lado verde�
 
 - **Fraunces**, peso 400: titulares editoriales, cifras y nombres de colecciones. Cursiva para una frase corta de acento.
 - **DM Sans**, pesos 400–600: párrafos, navegación, botones, etiquetas y formularios.
-- Héroes: 64–98 px en escritorio; 40–64 px en móvil. Titulares de sección: 37–61 px. Texto de contenido: 14–16 px, interlineado 1,7–1,85.
+- Escala única en `prototype/typography.css`, aplicada a todas las páginas mediante `prototype/design.css`. Los estilos de composición se importan en la capa `layout`, por debajo de la tipografía: ningún componente cambia el tamaño de un nivel.
+- H1: `clamp(64px, 6.5vw, 98px)`; tablet `clamp(58px, 7.5vw, 75px)`; móvil `clamp(40px, 11vw, 67px)` y 37 px hasta 360 px. Peso 400, interlineado 1,04 (1,06 móvil).
+- H2: `clamp(40px, 4.1vw, 61px)`; móvil `clamp(36px, 8.5vw, 48px)`. Peso 400, interlineado 1,08.
+- H3: 28 px (26 px móvil), peso 400, interlineado 1,25. H4/H5/H6: 22/18/16 px.
+- Todos los párrafos y direcciones: DM Sans 14 px, peso 400, interlineado 1,85, sin espaciado adicional.
+- Las etiquetas superiores, rótulos del pie y muestras tipográficas usan elementos propios; no alteran la escala de párrafos ni titulares.
 - Cuerpo en verde oscuro o verde grisáceo; evitar párrafos centrados o titulares enteros en mayúsculas.
 
 ## Colores
@@ -40,6 +45,8 @@ Referencia aprobada: `prototype/index.html`, hero «Donde empieza tu lado verde�
 
 ## Archivos comunes
 
+- `prototype/design.css`: entrada CSS común con capas de cascada.
+- `prototype/typography.css`: escala única de titulares y párrafos, compartida por todas las páginas.
 - `prototype/styles.css`: base heredada (reset, navegación y estructura del formulario).
 - `prototype/site.css` y `prototype/site.js`: lenguaje de la home, cabecera, pie, menú accesible y apariciones.
 - `prototype/hero.css`: hero aprobado de la home.

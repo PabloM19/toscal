@@ -1,0 +1,46 @@
+/* One scale across the home, interior pages and design guide. */
+:root {
+  --type-h1: clamp(64px, 6.5vw, 98px);
+  --type-h2: clamp(40px, 4.1vw, 61px);
+  --type-h3: 28px;
+  --type-body: 14px;
+}
+.home :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+.home h1 { font-size: var(--type-h1); line-height: 1.04; letter-spacing: -.052em; }
+.home h2 { font-size: var(--type-h2); line-height: 1.08; letter-spacing: -.052em; }
+.home h3 { font-size: var(--type-h3); line-height: 1.25; letter-spacing: -.04em; }
+.home h4 { font-size: 22px; line-height: 1.3; letter-spacing: -.03em; }
+.home h5 { font-size: 18px; line-height: 1.4; letter-spacing: -.02em; }
+.home h6 { font-size: 16px; line-height: 1.5; letter-spacing: 0; }
+.home p, .home address {
+  font-family: var(--sans);
+  font-size: var(--type-body);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.home :is(h1, h2, h3, h4, h5, h6) em { font-weight: inherit; }
+.home h1 em { white-space: normal; }
+/* The guide's specimens demonstrate exactly the same production scale. */
+.home .tg-serif-sample { font-size: var(--type-h1); line-height: 1.04; letter-spacing: -.052em; }
+@media (max-width: 1000px) {
+  :root { --type-h1: clamp(58px, 7.5vw, 75px); }
+}
+@media (max-width: 700px) {
+  :root {
+    --type-h1: clamp(40px, 11vw, 67px);
+    --type-h2: clamp(36px, 8.5vw, 48px);
+    --type-h3: 26px;
+  }
+  .home h1, .home .tg-serif-sample { line-height: 1.06; letter-spacing: -.05em; }
+}
+@media (max-width: 360px) {
+  :root { --type-h1: 37px; }
+}

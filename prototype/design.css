@@ -1,0 +1,7 @@
+/* Layout rules share a lower cascade layer. Typography below is the single
+   source of truth, regardless of component specificity or media queries. */
+@import url("styles.css") layer(layout);
+@import url("site.css") layer(layout);
+@import url("hero.css") layer(layout);
+@import url("pages.css") layer(layout);
+@import url("typography.css");
