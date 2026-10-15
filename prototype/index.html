@@ -16,6 +16,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="hero.css" />
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"GardenStore","name":"Toscal Garden","description":"Centro de jardinería en Xàbia con plantas, macetas, riego, floristería y proyectos de jardín.","telephone":"+34965795099","email":"toscal@toscalgarden.com","address":{"@type":"PostalAddress","streetAddress":"Camí Assagador de Cabanes, s/n","postalCode":"03730","addressLocality":"Xàbia","addressRegion":"Alicante","addressCountry":"ES"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"14:00"}],"url":"https://toscalgarden.eu/"}
     </script>
@@ -97,17 +98,20 @@
       </header>
     </div>
     <main id="contenido">
-      <section class="home-hero" aria-labelledby="home-title">
+      <section class="home-hero home-hero--immersive" aria-labelledby="home-title">
         <div class="wrap home-hero-grid">
           <div class="home-hero-copy">
-            <p class="home-eyebrow"><span></span> TU GARDEN MEDITERRÁNEO</p>
-            <h1 id="home-title">La vida,<br /> un poco<br /> <em>más verde.</em></h1>
-            <p class="home-hero-intro">Plantas que te acompañan. Rincones que se disfrutan. Todo empieza con un paseo por Toscal.</p>
-            <a class="home-button" href="#descubrir">Descubre el garden <svg class="home-icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+            <p class="home-eyebrow"><span></span> TOSCAL GARDEN · XÀBIA</p>
+            <h1 id="home-title">Donde empieza<br /> <em>tu lado verde.</em></h1>
+            <p class="home-hero-intro">Un paseo entre plantas. Una idea para tu casa. Un jardín que se siente tuyo. Encuentra tu forma de vivir más cerca de la naturaleza.</p>
+            <div class="home-hero-actions">
+              <a class="home-button" href="visitanos.html">Ven a descubrirlo <svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></a>
+              <a class="home-hero-secondary" href="#descubrir">Explorar plantas <svg class="home-icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+            </div>
             <div class="home-hero-note"><svg class="home-icon" aria-hidden="true"><use href="#sun"/></svg><span>Raíces en Xàbia. Alma mediterránea.</span></div>
           </div>
           <figure class="home-hero-visual">
-            <img src="assets/home/garden-invernadero-1000.webp" srcset="assets/home/garden-invernadero-640.webp 640w, assets/home/garden-invernadero-1000.webp 1000w, assets/home/garden-invernadero-1440.webp 1440w" sizes="(max-width: 700px) 100vw, (max-width: 1000px) 55vw, 58vw" width="1536" height="2048" alt="Un paseo entre palmeras, plantas verdes y flores en el invernadero de Toscal Garden" fetchpriority="high" />
+            <img src="assets/home/garden-invernadero-1000.webp" srcset="assets/home/garden-invernadero-640.webp 640w, assets/home/garden-invernadero-1000.webp 1000w, assets/home/garden-invernadero-1440.webp 1440w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1280px) calc(100vw - 80px), 1320px" width="1536" height="2048" alt="Un paseo entre palmeras, plantas verdes y flores en el invernadero de Toscal Garden" fetchpriority="high" />
             <span class="home-photo-location">XÀBIA · COSTA BLANCA</span>
             <a class="home-photo-note" href="visitanos.html"><span><strong>20.000 m²</strong><span>para dejarte inspirar.</span></span><span class="home-round-arrow"><svg class="home-icon" aria-hidden="true"><use href="#arrow-diagonal"/></svg></span></a>
           </figure>

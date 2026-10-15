@@ -1,0 +1,177 @@
+/* Alternative hero, isolated from the approved home and inner-page styles. */
+.home-hero--immersive .home-hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  min-height: 650px;
+  overflow: hidden;
+  background: var(--green);
+}
+.home-hero--immersive .home-hero-visual {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.home-hero--immersive .home-hero-visual > img {
+  object-position: 65% 57%;
+}
+.home-hero--immersive .home-hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, #0c291ff2 0%, #102f23db 30%, #133b307a 58%, #0d291b12 100%);
+}
+.home-hero--immersive .home-hero-copy {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 900px);
+  padding: 65px 64px;
+  align-self: center;
+  color: var(--cream);
+}
+.home-hero--immersive .home-eyebrow {
+  margin-bottom: 29px;
+  color: #e5e8dc;
+  font-size: 10px;
+  letter-spacing: .16em;
+}
+.home-hero--immersive .home-eyebrow > span {
+  background: #d9bd96;
+}
+.home-hero--immersive h1 {
+  max-width: 780px;
+  font-size: clamp(64px, 6.5vw, 98px);
+  line-height: 1.04;
+  letter-spacing: -.052em;
+}
+.home-hero--immersive h1 em {
+  color: #e8ddcd;
+}
+.home-hero--immersive .home-hero-intro {
+  max-width: 355px;
+  margin: 27px 0 30px;
+  color: #e3e7dc;
+  font-size: 14px;
+  line-height: 1.85;
+}
+.home-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+.home-hero--immersive .home-button {
+  color: var(--green);
+  background: var(--cream);
+  padding: 15px 21px;
+  gap: 30px;
+  font-size: 12px;
+}
+.home-hero--immersive .home-button:hover {
+  background: var(--sand);
+}
+.home-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 44px;
+  padding: 8px 0;
+  color: var(--cream);
+  border-bottom: 1px solid #f9f6ef70;
+  text-decoration: none;
+  font-size: 12px;
+  transition: border-color .2s;
+}
+.home-hero-secondary .home-icon {
+  width: 16px;
+  height: 16px;
+  flex-basis: 16px;
+  transition: transform .2s;
+}
+.home-hero-secondary:hover {
+  border-color: var(--cream);
+}
+.home-hero-secondary:hover .home-icon {
+  transform: translateY(3px);
+}
+.home-hero--immersive .home-hero-note {
+  margin-top: 37px;
+  color: #dce3d5;
+  font-size: 10px;
+}
+.home-hero--immersive .home-hero-note .home-icon {
+  color: #d9bd96;
+}
+.home-hero--immersive .home-photo-location {
+  z-index: 2;
+  top: 28px;
+  right: 30px;
+  left: auto;
+  background: #173b3066;
+}
+.home-hero--immersive .home-photo-note {
+  z-index: 3;
+  right: 30px;
+  bottom: 29px;
+}
+.home-hero--immersive :focus-visible {
+  outline-color: var(--cream);
+}
+.home-hero--immersive .home-photo-note:focus-visible {
+  outline-color: var(--terracotta);
+}
+@media (max-width: 1000px) {
+  .home-hero--immersive .home-hero-grid { min-height: 620px; }
+  .home-hero--immersive .home-hero-copy { width: min(100%, 790px); padding: 64px 44px; }
+  .home-hero--immersive h1 { font-size: clamp(58px, 7.5vw, 75px); }
+  .home-hero--immersive .home-photo-note { right: 25px; bottom: 25px; padding: 17px; gap: 20px; }
+  .home-hero--immersive .home-photo-note strong { font-size: 26px; }
+  .home-hero--immersive .home-photo-note .home-round-arrow { width: 33px; height: 33px; }
+}
+@media (max-width: 700px) {
+  .home-hero--immersive { padding-top: 16px; }
+  .home-hero--immersive .home-hero-grid { display: grid; min-height: 650px; }
+  .home-hero--immersive .home-hero-visual { height: 100%; }
+  .home-hero--immersive .home-hero-visual > img { object-position: 60% 55%; }
+  .home-hero--immersive .home-hero-visual::after {
+    background: linear-gradient(180deg, #0c291fc9 0%, #0c291fc9 45%, #0c291f3b 75%, #0c291fc2 100%);
+  }
+  .home-hero--immersive .home-hero-copy {
+    align-self: start;
+    width: 100%;
+    padding: 53px 25px 160px;
+  }
+  .home-hero--immersive .home-eyebrow { margin-bottom: 26px; font-size: 8px; letter-spacing: .13em; }
+  .home-hero--immersive h1 { font-size: clamp(40px, 11vw, 67px); line-height: 1.06; letter-spacing: -.05em; }
+  .home-hero--immersive .home-hero-intro { max-width: 340px; margin: 24px 0 26px; font-size: 13px; line-height: 1.8; }
+  .home-hero-actions { gap: 11px 24px; align-items: flex-start; }
+  .home-hero--immersive .home-button { min-height: 50px; padding: 13px 18px; gap: 27px; font-size: 11px; }
+  .home-hero-secondary { min-height: 44px; font-size: 11px; gap: 17px; }
+  .home-hero--immersive .home-hero-note { display: none; }
+  .home-hero--immersive .home-photo-location { display: none; }
+  .home-hero--immersive .home-photo-note {
+    bottom: 24px;
+    left: 25px;
+    right: 25px;
+    justify-content: space-between;
+    padding: 18px 0 0;
+    border-top: 1px solid #f9f6ef66;
+    background: transparent;
+    color: var(--cream);
+  }
+  .home-hero--immersive .home-photo-note strong { font-size: 28px; }
+  .home-hero--immersive .home-photo-note span span { color: #e3e7dc; font-size: 11px; }
+  .home-hero--immersive .home-photo-note .home-round-arrow { width: 38px; height: 38px; border-color: #f9f6ef80; }
+  .home-hero--immersive .home-photo-note:hover .home-round-arrow { background: #f9f6ef22; }
+  .home-hero--immersive .home-photo-note:focus-visible { outline-color: var(--cream); }
+}
+@media (max-width: 360px) {
+  .home-hero--immersive .home-hero-copy { padding-left: 20px; padding-right: 20px; }
+  .home-hero--immersive h1 { font-size: 37px; }
+  .home-hero--immersive .home-photo-note { left: 20px; right: 20px; }
+}
