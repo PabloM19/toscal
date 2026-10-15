@@ -1,6 +1,9 @@
 /* Alternative hero, isolated from the approved home and inner-page styles. */
+.home-hero--immersive { padding-top: 0; }
 .home-hero--immersive .home-hero-grid {
   position: relative;
+  width: 100%;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
@@ -107,13 +110,6 @@
 .home-hero--immersive .home-hero-note .home-icon {
   color: #d9bd96;
 }
-.home-hero--immersive .home-photo-location {
-  z-index: 2;
-  top: 28px;
-  right: 30px;
-  left: auto;
-  background: #173b3066;
-}
 .home-hero--immersive .home-photo-note {
   z-index: 3;
   right: 30px;
@@ -134,7 +130,6 @@
   .home-hero--immersive .home-photo-note .home-round-arrow { width: 33px; height: 33px; }
 }
 @media (max-width: 700px) {
-  .home-hero--immersive { padding-top: 16px; }
   .home-hero--immersive .home-hero-grid { display: grid; min-height: 650px; }
   .home-hero--immersive .home-hero-visual { height: 100%; }
   .home-hero--immersive .home-hero-visual > img { object-position: 60% 55%; }
@@ -153,7 +148,6 @@
   .home-hero--immersive .home-button { min-height: 50px; padding: 13px 18px; gap: 27px; font-size: 11px; }
   .home-hero-secondary { min-height: 44px; font-size: 11px; gap: 17px; }
   .home-hero--immersive .home-hero-note { display: none; }
-  .home-hero--immersive .home-photo-location { display: none; }
   .home-hero--immersive .home-photo-note {
     bottom: 24px;
     left: 25px;
