@@ -7,7 +7,7 @@ Web estática de Toscal Garden, Xàbia. La versión elegida está en `main`: her
 Desde la raíz del repositorio:
 
 ```sh
-python3 -m http.server 5186 --bind 127.0.0.1
+python3 scripts/serve.py
 ```
 
 - Web: <http://127.0.0.1:5186/prototype/index.html>
